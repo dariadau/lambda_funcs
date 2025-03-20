@@ -9,10 +9,10 @@
 # ['bcda', 'cbda', 'adcb'] (Аннограммы для строки abcd)
 
 def find_anagrams(a: list, s: str):
-    s = list(s)
+    
 
     for ltr in s:
         result = list(filter(lambda x: ltr in x, a))
 
     return result
-
+# расписать и вывести на экран (как сократить)
