@@ -8,6 +8,6 @@
 # 20 23 56
 
 def find_num(s: str):
-    max_len = len(max(s.split()))
-    num_chk = sorted(filter(lambda x: x.isdigit() and int(x) > max_len, s.split()))
+    max_len = len(max(filter(lambda x: x.isdigit(), s.split())))
+    num_chk = sorted(filter(lambda x: int(x) > max_len, s.split()))
     return ' '.join(num_chk)
